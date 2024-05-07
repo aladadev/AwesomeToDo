@@ -1,5 +1,6 @@
 import 'package:awesome_todo/components/back_decoration.dart';
 import 'package:awesome_todo/components/top_body.dart';
+import 'package:awesome_todo/views/tasklist_view.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -18,6 +19,7 @@ class HomePage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   TopBody(),
+                  Expanded(child: TaskListView()),
                 ],
               ),
             ),
